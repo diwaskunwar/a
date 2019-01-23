@@ -1,0 +1,96 @@
+<html>
+    <head>
+
+ 
+    </head>
+<body>
+
+<script>
+
+var addArray=[]
+var xArray = [];
+var yArray = [];
+var sizeI = 3;
+var sizeJ = 0;
+
+ for(let i=0; i<sizeI ; i++) {
+ 	xArray[i] = prompt('Enter Username' );
+  yArray[i] = yArray.unshift(prompt('Enter lastname '))
+   }
+   
+ for(let i = 0; i < xArray.length; i++){
+     addArray.push(xArray[i] + yArray[i]);
+  }
+
+
+document.write(xArray);
+document.write(yArray);
+document.write(addArray);
+
+
+       </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        
+
+        var addArray=[]
+var xArray = [];
+var yArray = [];
+var sizeI = 3;
+var sizeJ = -1;
+
+ for(let i=0; i<sizeI ; i++) {
+ 	xArray[i] = prompt('Enter Username' );
+   }
+
+for (let j = 2 ; j>sizeJ; j--){
+yArray[j] = prompt('Enter lastname ')
+
+}
+
+ for(let i = 0; i < xArray.length; i++){
+     addArray.push(xArray[i] + yArray[i]);
+  }
+
+
+console.log(xArray);
+console.log(yArray);
+console.log(addArray);
+
+
+       
+
+        </script> -->
+<!-- <script>     
+   var xArray = [];
+        var xsize = 10;
+        
+        for(var i=0; i<xsize; i++) {
+            
+            xArray[i] = prompt('Enter Element ' + (i+1));
+        }
+        
+        document.write(xArray);
+            
+   var yArray = [];
+        var ysize = 10;
+        
+        for(var j=0; j<ysize; j++) {
+            
+            yArray[j] = prompt('Enter Element ' + (j+1));
+        }
+        
+        document.write(yArray); -->
+    </script>
+        </body>
+    </html>

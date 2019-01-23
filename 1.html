@@ -1,0 +1,45 @@
+<html>
+    <head></head>
+<body>
+        <p id="firstinput"></p>
+        <p id="secondinput"></p>
+        <p id="addition"></p>
+<script>
+
+var last=[];
+var A = [];
+var  B = [];
+
+var x,y,c;
+var k = prompt("how many number do you want");
+
+for(var j=0; j < k; j++) {
+ 	x = prompt('Enter firstarray number' );
+    y = prompt('Enter secondarray Number ');
+  some(x,y);
+  sleep(5000);
+   }
+ 
+function some(x,y){
+ A.push(x);
+
+ B.unshift(y);
+
+ c = +x + +y;
+last.push(c);
+document.getElementById("firstinput").innerHTML = A ;
+document.getElementById("secondinput").innerHTML = B ;
+document.getElementById("addition").innerHTML = last ;
+}
+ 
+   function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+</script>
+</body>
+    </html>

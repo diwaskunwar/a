@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Save data using JS</title> 
+</head>
+<script>
+ function saveData() {
+  document.cookie="fname="+document.getElementById('fname').value+"; expires=Thu, 18 Dec 2019 12:00:00 UTC";
+  document.cookie="email="+document.getElementById('email').value+"; expires=Thu, 18 Dec 2019 12:00:00 UTC";
+
+  var radios = document.getElementsByName('gender');
+
+  for (var i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+        document.cookie="gender="+radios[i].value+"; expires=Thu, 18 Dec 2019 12:00:00 UTC";
+        break;
+    }
+}
+alert(`${fname}`)
+// alert('Data Saveddddddddddddddddddd!');
+}
+
+alert('SAVED DATA: '+ document.cookie.fname);
+</script>
+<body>
+  <h1>Sign up</h1>
+<form name="myForm" id="myForm" action="javascript:saveData();">
+  Name:<br>
+  <input type="text" name="fname" id="fname" required maxlength="40"><br><br>
+ E-mail: <input type="email" name="email" id="email" required><br><br>
+  Gender:<br>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

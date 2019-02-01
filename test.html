@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Save and Make object</title>
+</head>
+<body>
+    <form onsubmit="displayPart()">
+        Name:<input id="n1" type="text" name="name">
+        <input type="submit" value="submit" >
+    </form>
+</body>
+<script type="text/javascript">
+        function displayPart() {
+            var username = {};
+            var inputName = document.getElementById('n1');            
+            username = {NAME: inputName.value,};
+            console.log(username.NAME)
+        }
+    </script>
+</html>

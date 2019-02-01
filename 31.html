@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>MOVIES</title>
+</head>
+<body>
+    <form>
+        <p> MovieName: <input type='text' id="Movie_name" />
+            <button id="submit" onclick="find()">SEARCH</button></br>
+        </p>
+        <p>
+            GENRE : <select id="G1" onchange="GENRE()">
+                <option>CHOOSE</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="History">History</option>
+                <option value="Sports">Sports</option>
+            </select>
+        </p>
+        <p>
+            IMDB RATING: <select id="ID1" onchange="IMDB()">
+                <option>CHOOSE</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </p>
+        NAME : <input type='text' id="M1" /></br>
+        GENRE : <input type='text' id="genre" /></br>
+        IMDB RATING : <input type='number' id="imdb" /></br>
+        <button id="submit" onclick="saveData()">SUBMIT</button></br>
+
+    </form>
+    <div id= "box"></div>
+</body>
+<script src="js/31.js"></script>
+
+</html>

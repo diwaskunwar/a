@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>arrow inside arrow</title>
+</head>
+
+<body>
+    <script>
+        const myFunction = (par1) => {
+            return par1
+        };
+        const newFunction = (par2) => {
+            let ans = par2 * 2;
+            return ans;
+        }
+        console.log(myFunction(newFunction(3)));
+        ///currying
+        let a = (x, w) => {
+            let b = (y) => {
+                return y * (x + w);
+            }
+            return b;
+        }
+        console.log(a(2, 3)(4));
+    </script>
+</body>
+
+</html>

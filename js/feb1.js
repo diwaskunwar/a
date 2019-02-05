@@ -4,7 +4,6 @@ let inputName = document.getElementById('name');
 let inputGenre = document.getElementById('genre');
 let inputRating = document.getElementById('rating');
 let inputReview = document.getElementById('review');
-
 let movieListAdder = document.getElementById('button1');
 let genreFilter = document.getElementById('button2');
 let ratingFilter = document.getElementById('button3');

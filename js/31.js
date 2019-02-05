@@ -62,7 +62,6 @@ let GENRE = () => {
 var I = () => {
     return document.getElementById("ID1").value;
 }
-
 let IMDB = () => {
     Imdb = I()
     var html = "<table border='1px' width='500px'    >";

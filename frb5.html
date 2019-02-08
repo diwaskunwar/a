@@ -1,17 +1,42 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>jquery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-    <script src="js/feb5.js"></script>
-    <script>
-        $("document").
-    </script>
+  <meta charset="utf-8">
+  <title>j query ready load</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    
+<script>
+    // $().ready(function ()
+    // {
+    //     $('#button1').click(function ()
+    //     {
+    //         alert('jQuery Tutorial');
+    //     });
+    // });
+    // $(window).load(function(){
+    //   alert("window load")
+    // })
+    // $(window).ready(function(){
+    //   alert("window ready")
+    // })
+//     $(window).load(function (){
+//             $('#div1').html("Height = " + $('#Image1').height()
+// + "<br/>" + "Width = " + $('#Image1').width())
+//         });
+        $(window).ready(function (){
+            $('#div1').html("Height = " + $('#Image1').height()
++ "<br/>" + "Width = " + $('#Image1').width())
+        });
+
+</script>
+
+<div id="div1"></div>
+ <img src="assassins_creed_3_connor_free_running-wallpaper-2560x1440.jpg" id="Image1" />
+  <!-- <button type="button"  id="button1">click me -->
+
+<!-- </button> -->
+ 
 </body>
 </html>

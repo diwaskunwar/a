@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>each</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+<body>
+    <ul>
+        <li>h</li>
+        <li>e</li>
+        <li>l</li>
+        <li>l</li>
+        <li>o</li>
+    </ul>
+    <script>
+    $(document).ready( function(){
+        $("li").each(function(index , element){
+            alert(index +  ":" + $(element).text());
+        });
+    });
+    </script>
+</body>
+    </html>

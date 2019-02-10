@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>chaining</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body style="color:darkblue">
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+    <script>
+        $(document).ready(function () {
+            $('li').each(function () {
+
+                $('li')
+                .css('font-size','20px')
+                    .css('color', 'green')
+                    .slideUp(1000)
+
+                $('li').each(function () {
+
+                    $('li')
+                         .css('font-size','30px')
+                        .css('color', 'red')
+                        .slideDown(1000)
+                });
+            });
+        });
+
+        // $(document).ready(function () {
+        //             $('li').each(function () {
+
+        //                 $('li')
+        //                 .css('color', 'blue')
+        //                 .slideUp(1000)
+        //                 .css('color', 'red')
+        //                 .slideDown(1000);
+        //             })
+
+        //             // });
+    </script>
+</body>
+</html>

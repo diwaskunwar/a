@@ -31,24 +31,25 @@
         //         });
         //     });
         // });
+
         $(document).ready(function () {
-    var intArray = [1, 2, 3, 4, 5];
+            var intArray = [1, 2, 3, 4, 5];
 
-    function functionA(index, element) {
-        return element * 5;
-    }
+            function functionA(index, element) {
+                return element * 5;
+            }
 
-    function functionB(element, index) {
-        return element * 5;
-    }
+            function functionB(element, index) {
+                return element * 5;
+            }
 
-    var result1 = $.each(intArray, functionA);
-    var result2 = $.map(intArray, functionB);
+            var result1 = $.each(intArray, functionA);
+            var result2 = $.map(intArray, functionB);
 
-    document.write('each = ' + result1);
-    document.write('<br>')
-    document.write('map = ' + result2);
-});
+            document.write('each = ' + result1);
+            document.write('<br>')
+            document.write('map = ' + result2);
+        });
         // $(document).ready(function () {
         //             $('li').each(function () {
 

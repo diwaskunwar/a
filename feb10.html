@@ -6,32 +6,49 @@
 </head>
 
 <body style="color:darkblue">
-    <ul>
+    <!-- <ul>
         <li>hello</li>
         <li>hello</li>
         <li>hello</li>
         <li>hello</li>
         <li>hello</li>
-    </ul>
+    </ul> -->
     <script>
+        // $(document).ready(function () {
+        //     $('li').each(function () {
+
+        //         $('li')
+        //         .css('font-size','20px')
+        //             .css('color', 'green')
+        //             .slideUp(1000)
+
+        //         $('li')(function () {
+
+        //             $('li')
+        //             .css('font-size','30px')
+        //                 .css('color', 'red')
+        //                 .slideDown(1000)
+        //         });
+        //     });
+        // });
         $(document).ready(function () {
-            $('li').each(function () {
+    var intArray = [1, 2, 3, 4, 5];
 
-                $('li')
-                .css('font-size','20px')
-                    .css('color', 'green')
-                    .slideUp(1000)
+    function functionA(index, element) {
+        return element * 5;
+    }
 
-                $('li')(function () {
+    function functionB(element, index) {
+        return element * 5;
+    }
 
-                    $('li')
-                    .css('font-size','30px')
-                        .css('color', 'red')
-                        .slideDown(1000)
-                });
-            });
-        });
+    var result1 = $.each(intArray, functionA);
+    var result2 = $.map(intArray, functionB);
 
+    document.write('each = ' + result1);
+    document.write('<br>')
+    document.write('map = ' + result2);
+});
         // $(document).ready(function () {
         //             $('li').each(function () {
 

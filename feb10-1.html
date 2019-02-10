@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>each</title>
+        <title>$.each</title>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 <body>
@@ -11,6 +11,7 @@
         <li>l</li>
         <li>o</li>
     </ul> -->
+    
     <script>
     // $(document).ready( function(){
     //     $("li").each(function(index , element){
@@ -18,13 +19,13 @@
     //     });
     // });
     var arrays = ["arr1","arr2","arr3","arr4","arr5"];
-$(arrays).each(function (index, value) {
- alert("Array Current Index is: "+ index + " :: Value is: " + value); 
-});
-
-// $.each(arrays , function (index, value){
-// alert("Array Current Index is: "+ index + " :: Value is: " + value); 
+// $(arrays).each(function (index, value) {
+//  alert("Array Current Index is: "+ index + " :: Value is: " + value); 
 // });
+
+$.each(arrays , function (index, value){
+alert("Array Current Index is: "+ index + " :: Value is: " + value); 
+});
     </script>
 </body>
     </html>

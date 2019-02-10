@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>chaining</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -21,10 +22,10 @@
                     .css('color', 'green')
                     .slideUp(1000)
 
-                $('li').each(function () {
+                $('li')(function () {
 
                     $('li')
-                         .css('font-size','30px')
+                    .css('font-size','30px')
                         .css('color', 'red')
                         .slideDown(1000)
                 });
@@ -44,4 +45,5 @@
         //             // });
     </script>
 </body>
+
 </html>

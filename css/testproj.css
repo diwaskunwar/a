@@ -1,0 +1,25 @@
+body{
+    background: black;
+}
+.headline{
+ font-size: 6.5rem;
+ /* text-align: center; */
+ margin-left: 30px;
+color: white;
+}
+.headline-2{
+    font-size: 3rem;
+/* text-align: left; */
+margin-left: 30px;
+color: gray;
+}
+.btn {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+.btn-primary {
+    color: #0d0d0d;
+    background-color: #ffd300;
+    border-color: #ffd300;
+}
